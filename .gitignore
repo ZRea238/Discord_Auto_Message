@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.coverage
+coverage.xml
+htmlcov/
+
+# Local runtime files
+reminder_config.json
+reminder_state.json
+reminders.json
+cron.log
+
+# Secrets/local env files
+systemd/discord-auto-message.env
+*.env.local

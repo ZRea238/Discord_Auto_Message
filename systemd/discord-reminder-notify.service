@@ -1,0 +1,10 @@
+[Unit]
+Description=Discord Auto Message Preflight Reminder Notifications
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/zacha/repos/Discord_Auto_Message
+EnvironmentFile=/home/zacha/repos/Discord_Auto_Message/systemd/discord-auto-message.env
+ExecStart=/home/zacha/repos/Discord_Auto_Message/.venv/bin/python /home/zacha/repos/Discord_Auto_Message/src/send_preflight_notifications.py

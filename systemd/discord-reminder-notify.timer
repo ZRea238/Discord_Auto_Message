@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Discord preflight reminder notification check every minute
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+Persistent=true
+Unit=discord-reminder-notify.service
+
+[Install]
+WantedBy=timers.target
