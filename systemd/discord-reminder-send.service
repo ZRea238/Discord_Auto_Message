@@ -7,4 +7,4 @@ Wants=network-online.target
 Type=oneshot
 WorkingDirectory=/home/zacha/repos/Discord_Auto_Message
 EnvironmentFile=/home/zacha/repos/Discord_Auto_Message/systemd/discord-auto-message.env
-ExecStart=/home/zacha/repos/Discord_Auto_Message/.venv/bin/python /home/zacha/repos/Discord_Auto_Message/src/send_reminder.py
+ExecStart=/home/zacha/repos/Discord_Auto_Message/.venv/bin/python /home/zacha/repos/Discord_Auto_Message/src/send_reminder.py --webhook-url=$DISCORD_WEBHOOK_URL
